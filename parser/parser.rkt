@@ -4,13 +4,13 @@
 (provide load-ast)
 
 
-;; === Função auxiliar para extrair localização ===
+
 (define (parse-location loc)
   (list (hash-ref loc 'start)
         (hash-ref loc 'end)
         (hash-ref loc 'filename)))
 
-;; === Função recursiva para converter JSON -> AST ===
+;; JSON -> AST ===
 (define (json->ast node)
   (define kind (hash-ref node 'kind))
   (match kind
