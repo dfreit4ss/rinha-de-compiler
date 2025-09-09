@@ -18,7 +18,7 @@
 (define (teste expr)
     (displayln (hash-ref expr 'expression))
 
-    (eval )
+
     )
 
 
